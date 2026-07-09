@@ -1436,9 +1436,11 @@
             real-world machine learning applications.
           </p>
           <p>
-            I have one published paper on a Dual-Axis Solar Tracker system in
-            IJTSRD, and two manuscripts currently under review — covering
-            evolutionary algorithms and a novel sorting algorithm (HRP Sort).
+            I've two research papers published in IJTSRD — one on a Dual-Axis
+            Solar Tracker System and another on Sudoku Grid Detection using OCR.
+            Additionally, one research manuscript on a novel Hybrid Recursive
+            Partition (HRP) Sort algorithm is currently under review at Springer
+            Nature.
           </p>
           <p>
             I enjoy the intersection of theory and application — turning
@@ -1465,8 +1467,8 @@
             <div class="highlight-icon hi-red">🔬</div>
             <h4>Published Researcher</h4>
             <p>
-              One paper published in IJTSRD and two manuscripts currently under
-              review at international journals.
+              Two papers published in IJTSRD and one manuscript currently under
+              review at Springer Nature.
             </p>
           </div>
           <div class="highlight-card">
@@ -1509,6 +1511,81 @@
         <div class="divider"></div>
       </div>
       <div class="publications-grid">
+        <div class="pub-card pub-published fade-in">
+          <div class="pub-meta">
+            <span class="pub-status status-published">Published</span>
+            <span class="pub-venue">IJTSRD · Vol. 10, Issue 3 · 2026</span>
+          </div>
+          <h3>Sudoku Grid Detection Using OCR</h3>
+          <p class="pub-authors">
+            <strong
+              >Priyam Bhattacharya · Pritam Mondal · Sreena Mondal · Dr. Rajib
+              Kr. Das</strong
+            >
+          </p>
+          <p class="pub-abstract">
+            Optical Character Recognition (OCR) has advanced significantly with
+            deep learning, yet automatically recognizing and parsing printed
+            Sudoku grids from low-quality physical media-such as newspapers and
+            magazines-remains a persistent challenge due to variable typography,
+            perspective distortions, localized shadows, and ink degradation.
+            This paper presents a complete, web-based end-to-end software
+            pipeline designed to localize, digitize, and interactively guide
+            users through solving printed Sudoku puzzles. The proposed system
+            features an robust five-strategy cascade for image thresholding and
+            grid localization, ensuring structural invariance against
+            non-uniform illumination and perspective skewing. Following
+            geometric rectification via homographic perspective transformation,
+            individual cells undergo a customized twelve-candidate binarization
+            workflow reinforced by Contrast Limited Adaptive Histogram
+            Equalization (CLAHE) to effectively preserve thin or faint character
+            boundaries. Character recognition is driven by a deep convolutional
+            neural network architecture, termed DigitCNN, integrating
+            channel-wise Squeeze-and-Excitation block mechanics and symmetric
+            identity skip connections to automatically capture spatial
+            hierarchies of printed digits across diverse typefaces. To narrow
+            the persistent domain gap encountered in document analysis
+            pipelines, the DigitCNN model is optimized using an innovative
+            self-supervised, pipeline-aware training regime spanning 1.62
+            million stochastically degraded synthetic and augmented text samples
+            processed through the exact binarization pipeline executed during
+            inference. To overcome individual classification errors, the system
+            embeds a post-classification constraint correction layer acting on
+            global puzzle logic, combined with a self-supervised template
+            rescoring module utilizing high-confidence local predictions to
+            re-evaluate ambiguous cells. Experimental evaluations demonstrate
+            that the customized DigitCNN model achieves a peak validation
+            accuracy of 99.04% and a final convergent accuracy of 98.91%, vastly
+            outperforming classic structural frameworks. Integrated into a
+            monolithic Single Page Application (SPA) driven by a Flask-backed
+            runtime architecture, the system incorporates a non-deterministic
+            Minimum Remaining Values (MRV) heuristic-based backtracking solver
+            to parse real-time uniqueness violations dynamically. Rather than
+            acting as an automated solver that bypasses human reasoning, the
+            application operates strictly as an intelligent hint
+            provider-highlighting conflicting nodes, maintaining dual
+            pencil-and-pen entry modes, and exposing logical per-cell
+            constraints directly within the web interface to augment human
+            deductive problem-solving.
+          </p>
+          <div class="pub-tags">
+            <span class="pub-tag">Optical Character Recognition (OCR)</span>
+            <span class="pub-tag">Convolutional Neural Networks (CNN)</span>
+            <span class="pub-tag">Sudoku Grid Detection</span>
+            <span class="pub-tag">Squeeze-and-Excitation (SE)</span>
+            <span class="pub-tag">Perspective Correction</span>
+            <span class="pub-tag">Heuristic Backtracking Solver,</span>
+            <span class="pub-tag">IJTSRD</span>
+          </div>
+          <a
+            href="https://www.ijtsrd.com/computer-science/artificial-intelligence/133328/sudoku-grid-detection-using-ocr/priyam-bhattacharya"
+            target="_blank"
+            rel="noopener"
+            class="pub-link"
+            >↗ View Paper</a
+          >
+        </div>
+
         <div class="pub-card pub-published fade-in">
           <div class="pub-meta">
             <span class="pub-status status-published">Published</span>
